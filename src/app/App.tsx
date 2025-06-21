@@ -1,11 +1,8 @@
-import { Button } from "@/shared/ui/button"
+import React from 'react';
+import AppRouter from './router';
 
-function App() {
-  return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button>Click me</Button>
-    </div>
-  )
-}
+const App: React.FC = () => {
+  return <AppRouter />;
+};
 
-export default App
+export default App;
