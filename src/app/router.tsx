@@ -4,6 +4,7 @@ import Homepage from '../features/home/pages/Home';
 import LoginPage from '@/features/auth/pages/LoginPage';
 import { ProtectedRoute } from '@/features/auth/components/ProtectedRoute';
 import RegisterPage from '@/features/auth/pages/RegisterPage';
+import AccountPage from '@/features/auth/pages/AccountPage';
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,14 @@ const router = createBrowserRouter([
     element: (
       <ProtectedRoute>
         <Homepage />
+      </ProtectedRoute>
+    ),
+  },
+    {
+    path: '/account',
+    element: (
+      <ProtectedRoute>
+        <AccountPage />
       </ProtectedRoute>
     ),
   },
