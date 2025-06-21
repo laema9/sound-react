@@ -1,5 +1,11 @@
+import { Navbar } from "@/shared/components/Navbar";
+
 export default function Home () {
     return <>
-    <p>This is a Homepage</p>
+    
+        <header className="flex justify-center sm:p-5">
+            <Navbar />
+        </header>
+
     </>
 }
